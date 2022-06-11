@@ -24,13 +24,13 @@
 - 운영체제와 사용자는 하드웨어, 소프트웨어 자원을 공유하기 때문에 잘못된 프로그램으로 인해 다른 프로그램이나 운영체제 자체가 잘못 실행될 수 없도록 보장해야 한다. 그러기 위해서는 운영체제 코드 실행과 사용자 코드 실행을 구분할 수 있어야한다. 따라서 사용자 모드와 커널 모드로 구분하여 특권 명령, 하드웨어 장치 접근은 커널 모드에서 실행할 수 있다. 즉, 사용자 모드에서는 실행할 수 있는 기능을 매우 제한하여 리소스들을 보호한다
 
 # 1.6 Which of the following instructions should be privileged?
-a. set value of timer.
-b. Read the clock.
-c. Clear memory.
-d. Issue a trap instruction.
-e. Turn off interrupts.
-f. Modify entries in device-status table.
-g. Switch from user to kernel mode.
-h. Access I/O device.
+a. set value of timer.  
+b. Read the clock.  
+c. Clear memory.  
+d. Issue a trap instruction.  
+e. Turn off interrupts.  
+f. Modify entries in device-status table.  
+g. Switch from user to kernel mode.  
+h. Access I/O device.  
 
 - a, c, d, e, f, g, h
