@@ -39,6 +39,7 @@ h. Access I/O device.
 ## 1.7 Some early computers protected the operating system by placing it in a memory partition that could not be modified by either the user job or the operating system itself. Describe two difficulties that you think could arise with such a scheme.
 
 ## 1.8 Some CPUs provide for more than two modes of operation. What are two possible uses of these multiple modes?
+- multiple modes를 사용함으로써 세분화된 보안 정책을 제공할 수 있다
 
 ## 1.9 Timers could be used to compute the current time. Provide a short description of how this could be accomplished.
 - 타이머는 지정된 시간 후 컴퓨터를 인터럽트 하도록 설정한다. 고정, 가변 타이머가 존재한다. 가변 타이머는 fixed-rate-clock과 계수기로 구현한다. 운영체제는 계수기 값을 설정한다. 클록이 tick 할 때마다 계수기가 감소하여, 계수기가 0이 되면 인터럽트가 발생한다
