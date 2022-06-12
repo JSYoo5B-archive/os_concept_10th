@@ -33,13 +33,10 @@
 
 ---
 
-**1.16 Direct memory access is used for high-speed I/O devices in order to avoid increasing the CPU’s execution load.**
-
-**a. How does the CPU interface with the device to coordinate the transfer?**
-
-**b. How does the CPU know when the memory operations are complete?**
-
-**c. The CPU is allowed to execute other programs while the DMA controller is transferring data. Does this process interfere with the execution of the user programs? If so, describe what forms of interference are caused.**
+**1.16 Direct memory access is used for high-speed I/O devices in order to avoid increasing the CPU’s execution load.**  
+**a. How does the CPU interface with the device to coordinate the transfer?**  
+**b. How does the CPU know when the memory operations are complete?**  
+**c. The CPU is allowed to execute other programs while the DMA controller is transferring data. Does this process interfere with the execution of the user programs? If so, describe what forms of interference are caused.**  
 
 * (a) CPU와 디바이스 간의 데이터 전송은 운영체제의 일부로써 동작하는 디바이스 드라이버를 통해 이루어진다.
 * (b) DMA를 사용하는 경우 블록 단위로 데이터 전송이 이루어지는데, 전송이 다 끝난 경우 디바이스 컨트롤러가 인터럽트를 발생시킨다.
@@ -59,14 +56,14 @@
 
 --- 
 
-**1.19 Rank the following storage systems from slowest to fastest:**
-**a. Hard-disk drives**
-**b. Registers**
-**c. Optical disk**
-**d. Main memory**
-**e. Nonvolatile memory**
-**f. Magnetic tapes**
-**g. Cache**
+**1.19 Rank the following storage systems from slowest to fastest:**  
+**a. Hard-disk drives**  
+**b. Registers**  
+**c. Optical disk**  
+**d. Main memory**  
+**e. Nonvolatile memory**  
+**f. Magnetic tapes**  
+**g. Cache**  
 
 *
 
@@ -100,7 +97,7 @@
 
 ---
 
-**1.24 Describe some of the challenges of designing operating systems for mobile devices compared with designing operating systems for tradi- tional PCs.**
+**1.24 Describe some of the challenges of designing operating systems for mobile devices compared with designing operating systems for traditional PCs.**
 
 ---
 
