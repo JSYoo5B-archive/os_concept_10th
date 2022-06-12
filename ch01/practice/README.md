@@ -20,6 +20,19 @@
 
 ## 1.2 We have stressed the need for an operating system to make efficient use of the computing hardware. When is it appropriate for the operating system to forsake this principle and to "waste" resources? Why is such a system not really wasteful?
 
+### 일반 답변 (책 답안, 의도한 바)
+
+GUI의 경우, 사용자의 편의성과 프로그램의 오버헤드에 대한 Trade-off 관계를 가지는 프로그램이다.
+CLI같은 명령어로 수행할 수 있는 일을 GUI로 제공함으로서 계산 등의 자원이 낭비된다는 의견으로 보임.
+
+### 다른 답변
+
+먼저 GUI의 경우, GUI의 구현을 GPU에서 제공하지 않고, CPU에서 제공하게 되는 경우로 한정해야 한다 생각함.  
+CPU를 사용하여 화면을 렌더링 하는 예시로는 [FrameBuffer](https://bronks.tistory.com/89) 방식이 있다.
+
+GUI를 제외하고 자원을 낭비하는 대표적인 예시로는 Spin-lock이 있다. (Ch06쯤 Busy-waiting 개념에서 다룸)
+멀티 코어 환경에서 동기화 문제 발생 시, Sleep으로 대기시키면 문제가 발생할 수 있어, CPU time을 낭비하더라도 프로그램의 정확성을 확보해야 한다.
+
 ## 1.3 What is the main difficulty that a programmer must overcome in writing an operating system for a real-time environment?
 
 ## 1.4 Keeping in mind the various definitions of operating system, consider whether the operating system should include applications such as web browsers and mail programs. Argue both that it should and that is should not and support your answers.
