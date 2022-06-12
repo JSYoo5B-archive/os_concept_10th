@@ -23,11 +23,13 @@
 * 인터럽트와 트랩의 주요한 차이점은 발생 주체이다. 인터럽트는 하드웨어 장치에서 발생되지만 트랩은 유저 프로세스에서 발생된다. 또한, 인터럽트는 asynchronous 하지만 트랩은 synchronous하다.
 * 트랩은 유저 프로그램에서 고의적으로 생성될 수 있으며, 이와 같은 일을 하는 이유는 커널 모드에서만 사용할 수 있는 기능을 사용하기 위해서다. 
 
-
-
 --- 
 
 **1.15 Explain how the Linux kernel variables HZ and jiffies can be used to determine the number of seconds the system has been running since it was booted.**
+
+* Linux 커널의 변수 `jiffies`는 시스템이 부팅되고 난 후 발생한 인터럽트의 횟수를 나타내고, `HZ`는 1초에 발생하는 인터럽트 횟수를 나타낸다.
+* 따라서 시스템이 부팅 된 후 몇 초의 시간이 흘렀는지를 알고 싶다면 `jiffies / HZ`를 하면 된다.
+* 예를 들어 HZ는 250, `jiffies`는 50이라고 하면 시스템이 부팅된 이후로 `50 / 250 = 0.2`초가 지난 것임을 알 수 있다.
 
 ---
 
@@ -39,6 +41,10 @@
 
 **c. The CPU is allowed to execute other programs while the DMA controller is transferring data. Does this process interfere with the execution of the user programs? If so, describe what forms of interference are caused.**
 
+* (a) CPU와 디바이스 간의 데이터 전송은 운영체제의 일부로써 동작하는 디바이스 드라이버를 통해 이루어진다.
+* (b) DMA를 사용하는 경우 블록 단위로 데이터 전송이 이루어지는데, 전송이 다 끝난 경우 디바이스 컨트롤러가 인터럽트를 발생시킨다.
+* (c) DMA 컨트롤러(디바이스 컨드롤러)가 데이터 전송을 끝낸 경우 인터럽트를 발생시키는데, 이 경우 유저 프로그램의 실행이 중단될 수 있다.
+
 ---
 
 **1.17 Some computer systems do not provide a privileged mode of operation in hardware. Is it possible to construct a secure operating system for these computer systems? Give arguments both that it is and that it is not possible.**
@@ -47,7 +53,9 @@
 
 ---
 
-1.18 Many SMP systems have different levels of caches; one level is local to each processing core, and another level is shared among all processing cores. Why are caching systems designed this way?
+**1.18 Many SMP systems have different levels of caches; one level is local to each processing core, and another level is shared among all processing cores. Why are caching systems designed this way?**
+
+*
 
 --- 
 
@@ -62,23 +70,46 @@
 
 *
 
-1.20 Consider an SMP system similar to the one shown in Figure 1.8. Illustrate with an example how data residing in memory could in fact have a different value in each of the local caches.
+---
 
-1.21 Discuss, with examples, how the problem of maintaining coherence of cached data manifests itself in the following processing environments:
-a. Single-processor systems
-b. Multiprocessor systems
-c. Distributed systems
+**1.20 Consider an SMP system similar to the one shown in Figure 1.8. Illustrate with an example how data residing in memory could in fact have a different value in each of the local caches.**
 
-1.22 Describe a mechanism for enforcing memory protection in order to prevent a program from modifying the memory associated with other programs.
-1.23 Which network configuration — LAN or WAN — would best suit the fol- lowing environments?
-a. A campus student union
-b. Several campus locations across a statewide university system
-c. A neighborhood
+*
 
-1.24 Describe some of the challenges of designing operating systems for mobile devices compared with designing operating systems for tradi- tional PCs.
+---
 
-1.25 What are some advantages of peer-to-peer systems over client – server systems?
+**1.21 Discuss, with examples, how the problem of maintaining coherence of cached data manifests itself in the following processing environments:**
+**a. Single-processor systems**
+**b. Multiprocessor systems**
+**c. Distributed systems**
 
-1.26 Describe some distributed applications that would be appropriate for a peer-to-peer system.
+*
 
-1.27 Identify several advantages and several disadvantages of open-source operating systems. Identify the types of people who would find each aspect to be an advantage or a disadvantage.
+---
+
+**1.22 Describe a mechanism for enforcing memory protection in order to prevent a program from modifying the memory associated with other programs.**
+
+*
+
+---
+
+**1.23 Which network configuration — LAN or WAN — would best suit the fol- lowing environments?**
+**a. A campus student union**
+**b. Several campus locations across a statewide university system**
+**c. A neighborhood**
+
+---
+
+**1.24 Describe some of the challenges of designing operating systems for mobile devices compared with designing operating systems for tradi- tional PCs.**
+
+---
+
+**1.25 What are some advantages of peer-to-peer systems over client – server systems?**
+
+---
+
+**1.26 Describe some distributed applications that would be appropriate for a peer-to-peer system.**
+
+---
+
+**1.27 Identify several advantages and several disadvantages of open-source operating systems. Identify the types of people who would find each aspect to be an advantage or a disadvantage.**
