@@ -52,7 +52,7 @@
 
 **1.18 Many SMP systems have different levels of caches; one level is local to each processing core, and another level is shared among all processing cores. Why are caching systems designed this way?**
 
-*
+* SMP 시스템은 여러 개의 CPU가 parallel하게 동작한다. shared cache를 사용하지 않는 경우 각 CPU가 동일한 데이터 A에 액세스 하는 경우 CPU의 local 캐시에 데이터 A에 대한 복사본이 존재하게 된다. 불필요한 데이터 중복이 발생하게 되는 것이다. 하지만 [shared cache를 사용하게 되면 중복된 블록이 존재하지 않는다]().
 
 --- 
 
@@ -65,13 +65,13 @@
 **f. Magnetic tapes**  
 **g. Cache**  
 
-*
+* f - c - a - e - d - g - b
 
 ---
 
 **1.20 Consider an SMP system similar to the one shown in Figure 1.8. Illustrate with an example how data residing in memory could in fact have a different value in each of the local caches.**
 
-*
+* CPU의 로컬 캐시들로 데이터가 복사되어 CPU가 작업을 처리하며 그 값이 바뀐 데이터가 아직 메모리에 쓰여지지 않은 경우 로컬 캐시의 데이터와 메모리에 있는 데이터의 값이 다를 수 있다.
 
 ---
 
@@ -80,13 +80,13 @@
 **b. Multiprocessor systems**
 **c. Distributed systems**
 
-*
+* (a) single-processor 시스템에서 오직 한 개의 프로세스만 실행되는 경우 cache coherency(캐시 일관성)을 위해 별도로 관리해야할 것이 없다. 다만 여러 프로세스가 실행되는 multitasking 환경에서 여러 프로세스들이 동일한 데이터에 액세스하고자 하는 경우, 항상 각 프로세스가 최신 업데이트된 내용을 참조할 수 있도록 해야한다.
+* (b) multiprocessor 시스템에서는 동일한 데이터에 대한 카피본이 여러 캐시에 존재할 수 있다(각 프로세서가 local 캐시를 갖고 있기 때문이다.). CPU들이 parallel하게 동작하기 때문에 cache coherency를 위해 데이터의 값이 변경되면 해당 데이터를 갖고 있는 모든 캐시가 최신 값으로 업데이트 되어야한다.
+* (c) distributed 시스템에서는 동일한 파일 자체가 여러 컴퓨터에 있을 수 있기 때문에, 해당 파일들에 대한 데이터 동기화가 필요하다.
 
 ---
 
 **1.22 Describe a mechanism for enforcing memory protection in order to prevent a program from modifying the memory associated with other programs.**
-
-*
 
 ---
 
