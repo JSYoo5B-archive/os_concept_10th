@@ -37,6 +37,8 @@ GUI를 제외하고 자원을 낭비하는 대표적인 예시로는 Spin-lock�
 
 ## 1.4 Keeping in mind the various definitions of operating system, consider whether the operating system should include applications such as web browsers and mail programs. Argue both that it should and that is should not and support your answers.
 
+## 1.5 How does the distinction between kernel mode and user mode function as a rudimentary form of protection?
+
 ## 1.6 Which of the following instructions should be privileged?
 a. set value of timer.  
 b. Read the clock.  
