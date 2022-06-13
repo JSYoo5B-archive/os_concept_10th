@@ -9,3 +9,4 @@ close
 mmap
 malloc
 blank
+*_strace_log
