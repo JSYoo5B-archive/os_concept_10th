@@ -25,8 +25,15 @@
 **2.14 Describe why Android uses ahead-of-time (AOT) rather than just-in-time (JIT) compilation.**  
 
 **2.15 What are the two models of interprocess communication? What are the strengths and weaknesses of the two approaches?**  
+1. message-passing 모델  
+	* communication하는 프로세스들이 메세지를 주고 받아 정보를 교환하는 방식이다.  
+	* 정보를 교환하는데 있어 conflict가 발생하지 않아 작은 크기의 데이터를 주고 받는 것에 용이하나, 사이즈가 큰 데이터를 주고 받기 어렵다.  
+2. shared-memory 모델  
+	* communication하는 프로세스들 사이에 공유하는 메모리 영역을 잡고, 해당 메모리 영역에 데이터를 쓰고 읽어 정보를 교환하는 방식이다.
+	* synchronization, protection과 같은 이슈를 고려하며 구현해야 하기 때문에 구현이 더 복잡하지만 별도의 시스템 콜을 호출할 필요 없이 메모리에 데이터를 쓰고, 읽으면 되므로 빠르다.  
 
 **2.16 Contrast and compare an application programming interface (API) and an application binary interface (ABI).**  
+* API와 ABI는 인터페이스를 제공한다는 것에 있어 유사성을 갖는다. 다만 API는 소스코드 레벨에서의 인터페이스를 제공하고, ABI는 두 개의 바이너리 모듈 사이의 인터페이스를 제공하는 것에서 차이점을 갖는다.  
 
 **2.17 Why is the separation of mechanism and policy desirable?**  
 
