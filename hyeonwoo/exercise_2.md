@@ -18,6 +18,8 @@
 ## 2.12
 
 ### What are the advantages and disadvantages of using the same system call interface for manipulating both files and devices?
+- 같은 기능에 대해 다른 system call을 작성하지 않아도 된다
+- 하지만 device나 파일에 대해 고유한 기능에 대한 system call의 부재로 특정 기능에 대해 성능 이슈가 생길 수 있다
 
 ## 2.13
 
@@ -44,6 +46,7 @@ strengths and weaknesses of the two approaches?
 ## 2.16
 
 ### Contrast and compare an application programming interface (API) and an application binary interface (ABI).
+API는 애플리케이션 레벨에서 특정 기능을 지정하지만 ABI는 아키텍처 레벨에서 특정 운영체제와 상호 작용할 수 있는 방법을 정의한다
 
 ## 2.17
 
@@ -59,10 +62,14 @@ strengths and weaknesses of the two approaches?
 ## 2.19
 
 ### What is the main advantage of the microkernel approach to system design? How do user programs and system services interact in a microkernel architecture? What are the disadvantages of using the microkernel approach?
+- 새로운 기능을 추가할 때 커널을 수정할 필요가 없다
+- 확장이 쉽고 한 서비스가 잘못되더라도 운영체제의 다른 부분은 영향을 받지 않는다
+- 두 개의 서비스가 통신하기 위해서는 메시지 복사, 프로세스 전환이 필요한데, 이 때 발생한 오버헤드가 가장 큰 단점이다
 
 ## 2.20
 
 ### What are the advantages of using loadable kernel modules?
+- loadable한 kernel module은 kernel이 실행되는 동안에 수정할 수 있으므로 커널을 다시 재부팅할 필요가 없다
 
 ## 2.21
 
@@ -71,6 +78,8 @@ strengths and weaknesses of the two approaches?
 ## 2.22
 
 ### Explain why Java programs running on Android systems do not use the standard Java API and virtual machine.
+- 표준 API와 JVM은 모바일 기기가 아닌 데스크탑과 서버 시스템용으로 설계됐다
+- 모바일 장치용으로 별도의 API와 가상 머신이 따로 있다
 
 ## 2.23
 
