@@ -1,5 +1,9 @@
 **2.9 The services and functions provided by an operating system can be divided into two main categories. Briefly describe the two categories, and discuss how they differ.**  
-
+1. 사용자의 편의를 위한 기능  
+	* program execution, user interface, I/O operations, file-system manipulation, IPC, error detection 등이 있다.  
+2. 운영체제 자체의 효율적인 작업을 위한 기능
+	* resource allocation, logging, protection and security 등이 있다.  
+	
 **2.10 Describe three general methods for passing parameters to the operating system.**  
 * 운영체제에게 파라미터를 넘기는 일반적인 방식에는 크게 세 가지가 존재한다.
 	1. 레지스터 방식  
