@@ -1,6 +1,16 @@
 **2.9 The services and functions provided by an operating system can be divided into two main categories. Briefly describe the two categories, and discuss how they differ.**  
 
 **2.10 Describe three general methods for passing parameters to the operating system.**  
+* 운영체제에게 파라미터를 넘기는 일반적인 방식에는 크게 세 가지가 존재한다.
+	1. 레지스터 방식  
+		* 레지스터에 바로 파라미터 값을 저장하는 방식이다.  
+		* 파라미터 개수가 가용 가능한 레지스터 개수보다 많은 경우 이 방식은 사용할 수 없다.  
+	2. 블록 방식  
+		* 메모리에 블록 또는 테이블을 잡고, 해당 영역에 파라미터들을 저장한 후 메모리 주소를 레지스터에 저장하는 방식이다.  
+		* 레지스터 방식처럼 파라미터 개수를 제한하지 않는다.
+	3. 스택 방식  
+		* 파라미터들을 스택에 집어넣고 운영체제가 pop하여 사용하는 방식이다.
+		* 레지스터 방식처럼 파라미터 개수를 제한하지 않는다.
 
 **2.11 Describe how you could obtain a statistical profile of the amount of time a program spends executing different sections of its code. Discuss the importance of obtaining such a statistical profile.**  
 
