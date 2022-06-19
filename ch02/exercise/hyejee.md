@@ -15,7 +15,11 @@
 **2.11 Describe how you could obtain a statistical profile of the amount of time a program spends executing different sections of its code. Discuss the importance of obtaining such a statistical profile.**  
 
 **2.12 What are the advantages and disadvantages of using the same system- call interface for manipulating both files and devices?**  
-
+* 장점  
+	* 모든 디바이스에 파일시스템에 존재하는 파일과 동일하게 접근할 수 있다. 따라서 프로그램들은 파일에 액세스하는 코드를 디바이스 액세스에 사용할 수 있어 코드의 재사용성을 높일 수 있다.
+* 단점  
+	* 인터페이스는 general한 operation들에 대한 기능만 제공하게 되므로, 특정 디바이스의 기능을 사용할 수 없을 수 있다.  
+	
 **2.13 Would it be possible for the user to develop a new command interpreter using the system-call interface provided by the operating system?**  
 
 **2.14 Describe why Android uses ahead-of-time (AOT) rather than just-in-time (JIT) compilation.**  
