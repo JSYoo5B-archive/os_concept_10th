@@ -5,6 +5,10 @@
 * 각 단원 별 질문 - 답변 등 정리 예정
 * 각 단원에서 참고할만한 예제 코드 첨부 예정
 
+목차
+1. Introduction
+2. Operating System Structure
+
 ## 참고 자료
 
 * [강의자료 슬라이드](https://codex.cs.yale.edu/avi/os-book/OS10/slide-dir/index.html)
