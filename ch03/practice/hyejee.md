@@ -1,9 +1,11 @@
 **3.1 Using the program shown in Figure 3.30, explain what the output will be at LINE A.**  
 ```C
 #include <sys/types.h>
- #include <stdio.h> 
- #include <unistd.h>
+#include <stdio.h> 
+#include <unistd.h>
+
 int value = 5;
+
 int main()
 {
     pid_t pid;
@@ -24,7 +26,9 @@ int main()
 ```
 **3.2 Including the initial parent process, how many processes are created by the program shown in Figure 3.31?**  
 ```C
-#include <stdio.h> #include <unistd.h>
+#include <stdio.h> 
+#include <unistd.h>
+
 int main()
 {
     /* fork a child process */
