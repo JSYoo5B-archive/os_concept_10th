@@ -24,6 +24,9 @@ int main()
     } 
 }
 ```
+* LINE A에서의 아웃풋은 `5`이다.  
+* 이 문제에서 확인하고 싶은 개념은 `fork()`를 통해 생성된 child process는 parent process의 address space를 그대로 복사하지만 이것이 두 프로세스가 물리적으로 동일한 메모리 공간을 공유하는 것이 아니라는 것이다. 최적화를 위해 COW(Copy On Write)를 통해 child process가 메모리의 내용을 변경하기 전까지 parent process의 물리 메모리를 참조하고 있을 수 있으나 변경이 일어나면 메모리 복사가 일어나 결국은 서로 다른 물리적 메모리를 차지하게 된다.          
+
 **3.2 Including the initial parent process, how many processes are created by the program shown in Figure 3.31?**  
 ```C
 #include <stdio.h> 
@@ -43,6 +46,7 @@ int main()
     return 0;
 }
 ```
+* 8개의 프로세스가 생성된다.  
 
 **3.3 Original versions of Apple’s mobile iOS operating system provided no means of concurrent processing. Discuss three major complications that concurrent processing adds to an operating system.**  
 
