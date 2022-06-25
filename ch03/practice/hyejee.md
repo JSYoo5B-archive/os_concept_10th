@@ -52,6 +52,8 @@ int main()
 
 **3.4 Some computer systems provide multiple register sets. Describe what happens when a context switch occurs if the new context is already loaded into one of the register sets. What happens if the new context is in memory rather than in a register set and all the register sets are in use?**  
 
+* 새로운 컨텍스트가 저장될 register set으로 포인터를 변경하고, 해당 register set에 있는 내용을 메모리에 옮긴다. 그리고 새로운 컨텍스트가 메모리에서 register set으로 load 된다.  
+
 **3.5 When a process creates a new process using the fork() operation, which of the following states is shared between the parent process and the child process?**  
 **a. Stack**  
 **b. Heap**  
