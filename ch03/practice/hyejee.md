@@ -57,6 +57,8 @@ int main()
 **b. Heap**  
 **c. Shared memory segments**  
 
+* `c. Shared memory segments`만이 parent process와 새롭게 생성된 child process 사이에서 공유되는 메모리다.  
+
 **3.6 Consider the “exactly once”semantic with respect to the RPC mechanism. Does the algorithm for implementing this semantic execute correctly even if the ACK message sent back to the client is lost due to a net- work problem? Describe the sequence of messages, and discuss whether “exactly once” is still preserved.**  
 
 **3.7 Assume that a distributed system is susceptible to server failure. What mechanisms would be required to guarantee the “exactly once” semantic for execution of RPCs?**  
