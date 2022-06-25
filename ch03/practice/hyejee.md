@@ -50,7 +50,7 @@ int main()
 
 **3.3 Original versions of Apple’s mobile iOS operating system provided no means of concurrent processing. Discuss three major complications that concurrent processing adds to an operating system.**  
 
-**3.4 Some computer systems provide multiple register sets. Describe what happens when a context switch occurs if the new context is alreadyloaded into one of the register sets. What happens if the new context is in memory rather than in a register set and all the register sets are in use?**  
+**3.4 Some computer systems provide multiple register sets. Describe what happens when a context switch occurs if the new context is already loaded into one of the register sets. What happens if the new context is in memory rather than in a register set and all the register sets are in use?**  
 
 **3.5 When a process creates a new process using the fork() operation, which of the following states is shared between the parent process and the child process?**  
 **a. Stack**  
