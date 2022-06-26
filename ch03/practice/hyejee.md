@@ -64,5 +64,7 @@ int main()
 
 **3.6 Consider the “exactly once”semantic with respect to the RPC mechanism. Does the algorithm for implementing this semantic execute correctly even if the ACK message sent back to the client is lost due to a net- work problem? Describe the sequence of messages, and discuss whether “exactly once” is still preserved.**  
 
+* ACK 메세지가 유실되더라도 exactly-once semantics는 유지된다. client는 server로부터 ACK 메세지를 받을 때까지 주기적으로 rpc를 보내지만, 서버 측에서 해당 rpc가 정상적으로 처리되었음을 timestamp 등을 통해 판별하여 rpc를 다시 처리하지 않고 ACK를 보낸다.  
+
 **3.7 Assume that a distributed system is susceptible to server failure. What mechanisms would be required to guarantee the “exactly once” semantic for execution of RPCs?**  
 
