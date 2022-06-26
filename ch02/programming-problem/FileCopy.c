@@ -31,9 +31,11 @@ bool checkExistanceOf(char * fileName) {
     FILE * filePointer = fopen(fileName, "r");
     
     if (!filePointer) {
+        fclose(filePointer);
         return false;
     }
     else {
+        fclose(filePointer);
         return true;
     }
 }
