@@ -1,6 +1,13 @@
 CC?=gcc
-# Add static flag to prevent linking shared objects
-CFLAGS=-static -g
+
+UNAME := $(shell uname)
+ifneq ($(UNAME), Darwin)
+	# Add static flag to prevent linking shared objects
+	# macOS doesn't support static options
+	CFLAGS=-static -g
+else
+	CFLAGS=-g
+endif
 
 all: fork exec exit open read write close mmap malloc
 
