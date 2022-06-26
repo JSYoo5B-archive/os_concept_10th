@@ -46,6 +46,7 @@ int main()
     return 0;
 }
 ```
+![ch03-practice-3-2](https://user-images.githubusercontent.com/46441723/175803670-0fba2550-f6ee-403a-bffd-96a2bf584e72.jpg)  
 * 8개의 프로세스가 생성된다.  
 
 **3.3 Original versions of Apple’s mobile iOS operating system provided no means of concurrent processing. Discuss three major complications that concurrent processing adds to an operating system.**  
