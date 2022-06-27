@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Run hello executable with strace
+strace -T -C ./hello 2> hello_strace_log
+
 # Run fork executable with strace
 strace -T -C ./fork 2> fork_strace_log
 
@@ -26,3 +29,6 @@ strace -T -C ./mmap < mmap_input 2> mmap_strace_log
 
 # Run malloc executable with strace
 strace -T -C ./malloc 2> malloc_strace_log
+
+# Run blank executable with strace
+strace -T -C ./blank 2> blank_strace_log
