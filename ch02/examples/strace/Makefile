@@ -9,7 +9,7 @@ else
 	CFLAGS=-g
 endif
 
-all: fork exec exit open read write close mmap malloc
+all: fork exec exit open read write close mmap malloc blank
 
 fork: fork.c
 	$(CC) -o $@ $< $(CFLAGS)
