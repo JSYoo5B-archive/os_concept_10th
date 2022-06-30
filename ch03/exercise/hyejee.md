@@ -1,4 +1,4 @@
-**3.8 Describe the actions taken by a kernel to context-switch between pro- cesses.**  
+**3.8 Describe the actions taken by a kernel to context-switch between processes.**  
 
 **3.9 Construct a process tree similar to Figure 3.7. To obtain process infor- mation for the UNIX or Linux system, use the command `ps -ael`. Use the command man ps to get more information about the ps com- mand. The task manager on Windows systems does not provide the parent process ID, but the process monitor tool, available from tech- net.microsoft.com, provides a process-tree tool.**  
 
