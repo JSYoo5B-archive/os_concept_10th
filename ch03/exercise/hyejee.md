@@ -3,6 +3,10 @@
 **3.9 Construct a process tree similar to Figure 3.7. To obtain process infor- mation for the UNIX or Linux system, use the command `ps -ael`. Use the command man ps to get more information about the ps com- mand. The task manager on Windows systems does not provide the parent process ID, but the process monitor tool, available from tech- net.microsoft.com, provides a process-tree tool.**  
 **3.9 Construct a process tree similar to Figure 3.7. To obtain process information for the UNIX or Linux system, use the command `ps -ael`. Use the command man ps to get more information about the ps command. The task manager on Windows systems does not provide the parent process ID, but the process monitor tool, available from tech- net.microsoft.com, provides a process-tree tool.**  
 
+![CleanShot 2022-06-30 at 16 24 34@2x](https://user-images.githubusercontent.com/46441723/176618017-79ce8fae-61d4-4e5d-9cea-f1715b77e332.png)  
+
+
+
 **3.10 Explain the role of the init (or systemd) process on UNIX and Linux systems in regard to process termination.**  
 
 **3.11 Including the initial parent process, how many processes are created by the program shown in Figure 3.32?**  
