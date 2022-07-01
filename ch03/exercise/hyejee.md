@@ -94,6 +94,11 @@ int main()
  }
 ```
 
+* A: 0  
+* B: 2603  
+* C: 2603  
+* D: 2600  
+
 **3.14 Give an example of a situation in which ordinary pipes are more suitable than named pipes and an example of a situation in which named pipes are more suitable than ordinary pipes.**  
 
 **3.15 Consider the RPC mechanism. Describe the undesirable consequences that could arise from not enforcing either the “at most once” or “exactly once” semantic. Describe possible uses for a mechanism that has neither of these guarantees.**  
