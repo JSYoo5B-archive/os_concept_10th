@@ -59,6 +59,8 @@ int main()
 }
 ```  
 
+* `execlp()` 시스템콜은 현재 프로세스의 주소 공간을 새로운 프로그램으로 덮어쓰는 역할을 한다. 위 프로그램에서 `execlp()` 호출이 성공할 경우 현재 프로세스는 새로운 프로그램으로 바뀌어 `printf("LINE J")`를 실행할 수 없다. 따라서 `execlp()` 호출에 실패하여야 `printf("LINE J")`를 수행할 수 있다.  
+
 **3.13 Using the program in Figure 3.34, identify the values of pid at lines A, B, C, and D. (Assume that the actual pids of the parent and child are 2600 and 2603, respectively.)**  
 ```C
 #include <sys/types.h> 
