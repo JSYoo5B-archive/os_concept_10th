@@ -7,6 +7,10 @@
 
 **3.10 Explain the role of the init (or systemd) process on UNIX and Linux systems in regard to process termination.**  
 
+* 부모 프로세스가 자식 프로세스가 종료될 때까지 `wait()` 시스템 콜을 사용해 기다리지 않고 종료한 경우, 자식 프로세스는 부모 프로세스를 잃고 **orphan**이 된다.  
+* 전통적인 UNIX 시스템의 경우, 이런 orphan 프로세스들을 init 프로세스의 자식으로 assign 하여, 자식 프로세스가 종료될 수 있도록 해준다.  
+* Linux의 경우 UNIX의 init 프로세스를 systemd라고 부르지만 동작 방식은 UNIX의 init 프로세스와 동일하다.  
+
 **3.11 Including the initial parent process, how many processes are created by the program shown in Figure 3.32?**  
 ```C
 
