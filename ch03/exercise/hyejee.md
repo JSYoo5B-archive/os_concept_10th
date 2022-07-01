@@ -27,7 +27,7 @@ int main()
     return 0;
 }
 ```  
-
+* `2^4 = 16`으로 16개가 생성된다.
 
 **3.12 Explain the circumstances under which the line of code marked printf("LINE J") in Figure 3.33 will be reached.**  
 ```C
