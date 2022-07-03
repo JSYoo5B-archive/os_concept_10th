@@ -9,8 +9,11 @@ bool FileExists(char* fileName) // 파일 존재 여부를 체크하는 함수
 
     if (!filePtr) // 존재하지 않는 경우 false return
     {
+        // 파일 닫아줄 필요 X
         return false;
     }
+    
+    fclose(filePtr); // 파일 닫아주기
     return true;
 }
 
