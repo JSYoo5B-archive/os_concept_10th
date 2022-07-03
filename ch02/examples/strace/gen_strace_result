@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Run hello executable with strace
+strace -T -C ./hello 2> hello_strace_log
+
+# Run fork executable with strace
+strace -T -C ./fork 2> fork_strace_log
+
+# Run exec executable with strace
+strace -T -C ./exec 2> exec_strace_log
+
+# Run exit executable with strace
+strace -T -C ./exit 2> exit_strace_log
+
+# Run open executable with strace
+strace -T -C ./open 2> open_strace_log
+
+# Run read executable with strace
+echo "a" | strace -T -C ./read 2> read_strace_log
+
+# Run write executable with strace
+strace -T -C ./write 2> write_strace_log
+
+# Run close executable with strace
+strace -T -C ./close 2> close_strace_log
+
+# Run mmap executable with strace
+strace -T -C ./mmap < mmap_input 2> mmap_strace_log
+
+# Run malloc executable with strace
+strace -T -C ./malloc 2> malloc_strace_log
+
+# Run blank executable with strace
+strace -T -C ./blank 2> blank_strace_log

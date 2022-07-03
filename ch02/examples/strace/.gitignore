@@ -1,0 +1,12 @@
+fork
+hello
+exec
+exit
+open
+read
+write
+close
+mmap
+malloc
+blank
+*_strace_log
