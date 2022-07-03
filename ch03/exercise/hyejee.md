@@ -103,6 +103,7 @@ int main()
 
 **3.15 Consider the RPC mechanism. Describe the undesirable consequences that could arise from not enforcing either the “at most once” or “exactly once” semantic. Describe possible uses for a mechanism that has neither of these guarantees.**  
 
+
 **3.16 Using the program shown in Figure 3.35, explain what the output will be at lines X and Y.**  
 ```C
 #include <sys/types.h> 
@@ -134,6 +135,7 @@ int main()
     return 0;
 }
 ```  
+* CHILD: 0 CHILD: -1 CHILD: -4 CHILD: -9 CHILD: -16 PARENT: 0 PARENT: 1 PARENT: 2 PARENT: 3 PARENT: 4  
 
 **3.17 What are the benefits and the disadvantages of each of the following? Consider both the system level and the programmer level.**  
 **a. Synchronous and asynchronous communication**  
