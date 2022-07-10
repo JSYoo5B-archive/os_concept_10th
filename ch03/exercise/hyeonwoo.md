@@ -132,9 +132,7 @@ int main()
 
 ## 3.14
 
-### Give an example of a situation in which ordinary pipes are more suitable
-than named pipes and an example of a situation in which named pipes
-are more suitable than ordinary pipes.
+### Give an example of a situation in which ordinary pipes are more suitable than named pipes and an example of a situation in which named pipes are more suitable than ordinary pipes.
 
 ## 3.15
 
