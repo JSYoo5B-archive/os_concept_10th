@@ -1,7 +1,7 @@
 **3.8 Describe the actions taken by a kernel to context-switch between processes.**  
 * 커널은 old process의 context를 PCB에 저장하고 새로운 프로세스의 context를 그 프로세스의 PCB로부터 불러온다.  
 
-**3.9 Construct a process tree similar to Figure 3.7. To obtain process infor- mation for the UNIX or Linux system, use the command `ps -ael`. Use the command man ps to get more information about the ps com- mand. The task manager on Windows systems does not provide the parent process ID, but the process monitor tool, available from tech- net.microsoft.com, provides a process-tree tool.**  
+**3.9 Construct a process tree similar to Figure 3.7. To obtain process information for the UNIX or Linux system, use the command `ps -ael`. Use the command man ps to get more information about the ps com- mand. The task manager on Windows systems does not provide the parent process ID, but the process monitor tool, available from technet.microsoft.com, provides a process-tree tool.**  
 
 ![CleanShot 2022-06-30 at 16 24 34@2x](https://user-images.githubusercontent.com/46441723/176618017-79ce8fae-61d4-4e5d-9cea-f1715b77e332.png)  
 
