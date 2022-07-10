@@ -102,6 +102,9 @@ int main()
 
 **3.14 Give an example of a situation in which ordinary pipes are more suitable than named pipes and an example of a situation in which named pipes are more suitable than ordinary pipes.**  
 
+* ordinary pipe는 두 개의 특정 프로세스들 사이의 communication에서 named pipe보다 더 적합하다.  
+* named pipe는 하나의 프로세스가 다른 프로세스들의 request들을 listen하고 있는 경우 사용하기 적합하다.  
+
 **3.15 Consider the RPC mechanism. Describe the undesirable consequences that could arise from not enforcing either the “at most once” or “exactly once” semantic. Describe possible uses for a mechanism that has neither of these guarantees.**  
 
 
