@@ -15,5 +15,6 @@
 * context-switch 될 쓰레드의 CPU 레지스터 내용들을 저장하고, 새로 스케쥴된 쓰레드의 레지스터 내용들을 restore한다.  
 
 **4.6 What resources are used when a thread is created? How do they differ from those used when a process is created?**  
+* 프로세스가 생성될 때는 PCB를 할당해야하지만 쓰레드가 생성될 때는 스택, register set, priority 등의 비교적 적은 자원이 필요하다.  
 
 **4.7 Assume that an operating system maps user-level threads to the kernel using the many-to-many model and that the mapping is done through LWPs. Furthermore, the system allows developers to create real-time threads for use in real-time systems. Is it necessary to bind a real-time thread to an LWP? Explain.**  
