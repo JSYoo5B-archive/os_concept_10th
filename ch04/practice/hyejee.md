@@ -12,6 +12,7 @@
 * kernel-level trhead는 kernel-level에서 관리되기 때문에 비용이 더 비싸다. 꼭 kernel space에 존재해야하는 쓰레드가 아니라면 user-level thread를 사용하여 처리하고, many-to-one 모델처럼 다수의 user-level thread들을 하나의 kernel-level thread로 매핑시켜 비용을 절감시켜줄 수 있다.  
 
 **4.5 Describe the actions taken by a kernel to context-switch between kernel- level threads.**  
+* context-switch 될 쓰레드의 CPU 레지스터 내용들을 저장하고, 새로 스케쥴된 쓰레드의 레지스터 내용들을 restore한다.  
 
 **4.6 What resources are used when a thread is created? How do they differ from those used when a process is created?**  
 
