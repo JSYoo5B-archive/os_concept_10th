@@ -7,6 +7,7 @@
 **b. Heap memory**  
 **c. Global variables**  
 **d. Stack memory**  
+* b. Heap memeory, c. Global variable
 
 **4.11 Can a multithreaded solution using multiple user-level threads achieve better performance on a multiprocessor system than on a single-processor system? Explain.**  
 
