@@ -1,8 +1,5 @@
 **4.8 Provide two programming examples in which multithreading does not provide better performance than a single-threaded solution.**  
 
-* 사용자에게 GUI를 통해 다운로드 진행 상황을 보여주어야하는 애플리케이션의 경우 멀티 쓰레딩 프로그래밍을 활용하여 쓰레드 하나는 화면을 렌더링하고 다른 쓰레드는 다운로드를 하는 것이 단일 쓰레드보다 효율적이다.  
-* 많은 양의 계산을 해야하는 경우, 멀티 쓰레드를 활용하여 계산을 나누어 하면 조금 더 효율적으로 계산을 처리할 수 있다.  
-
 **4.9 Under what circumstances does a multithreaded solution using multiple kernel threads provide better performance than a single-threaded solution on a single-processor system?**  
 
 **4.10 Which of the following components of program state are shared across threads in a multithreaded process?**  
