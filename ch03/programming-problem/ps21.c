@@ -1,23 +1,34 @@
-#include <stdio.h> 
+#include <stdio.h>
 #include <unistd.h>
+#include <stdlib.h>
+#include <sys/wait.h>
 
-int main()
+int main(int argc, char *argv[])
 {
-    int num = 0;
+    if(argc < 2) {
+        printf("잘못된 입력");
+        return 0;
+    }
 
-    scanf("%d", &num);
+    int num = atoi(argv[1]);
 
     pid_t child_pid;
 
     child_pid = fork();
 
-    while(num != 1){
-        printf("%d ", num);
+    if(child_pid == 0){
+        while(num > 2){
+            printf("%d ", num);
 
-        if(num % 2 == 0) num /= 2;
+            if(num % 2 == 0) num /= 2;
 
-        else num = num * 3 + 1;
+            else num = num * 3 + 1;
+        }
+         printf("1\n");
     }
-
-    printf("1\n");
+    else if(child_pid > 0){
+        printf("Parent process wait\n");
+        wait(NULL);
+        printf("Child process exit\n");
+    }
 }
