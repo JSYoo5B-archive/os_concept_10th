@@ -91,6 +91,10 @@ void *runner(void *param) {
     pthread_exit(0);
 }
 ```
+
+* LINE C: `CHILD: value = 5`  
+* LINE P: `PARENT: value = 0`  
+
 **4.20 Consider a multicore system and a multithreaded program written using the many-to-many threading model. Let the number of user-level threads in the program be greater than the number of processing cores in the system. Discuss the performance implications of the following scenarios.**  
 **a. The number of kernel threads allocated to the program is less than the number of processing cores.**  
 **b. The number of kernel threads allocated to the program is equal to the number of processing cores.**  
