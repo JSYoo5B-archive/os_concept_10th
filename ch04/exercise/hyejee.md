@@ -106,8 +106,13 @@ void *runner(void *param) {
 
 **4.20 Consider a multicore system and a multithreaded program written using the many-to-many threading model. Let the number of user-level threads in the program be greater than the number of processing cores in the system. Discuss the performance implications of the following scenarios.**  
 **a. The number of kernel threads allocated to the program is less than the number of processing cores.**  
+* idle 상태의 코어들이 존재할 것이다.  
+
 **b. The number of kernel threads allocated to the program is equal to the number of processing cores.**  
+* 모든 코어들이 사용될 수 있지만, 커널 쓰레드가 block 되는 경우 코어가 idle 상태가 될 수 있다.  
+
 **c. The number of kernel threads allocated to the program is greater than the number of processing cores but less than the number of user-level threads.**  
+* 커널 쓰레드들 사이에 swapping이 발생할 수 있다.  
 
 **4.21 Pthreads provides an API for managing thread cancellation. The pthread setcancelstate() function is used to set the cancellation state. Its prototype appears as follows:**  
 ```C
