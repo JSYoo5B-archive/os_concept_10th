@@ -17,6 +17,8 @@
 
 **4.13 Is it possible to have concurrency but not parallelism? Explain.**  
 
+* 가능하다. 여러 개의 태스크를 조금씩 태스크 사이를 이동하며 처리하면 parallelism 없이도 concurrency를 이룰 수 있다.    
+
 **4.14 Using Amdahl’s Law, calculate the speedup gain for the following applications:**  
 • 40 percent parallel with (a) eight processing cores and (b) sixteen processing cores  
 • 67 percent parallel with (a) two processing cores and (b) four pro- cessing cores  
