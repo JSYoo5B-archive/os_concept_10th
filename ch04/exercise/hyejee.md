@@ -51,6 +51,9 @@ fork();
 **a. How many unique processes are created?**  
 **b. How many unique threads are created?**  
 
+* a. 5개의 서로 다른 프로세스들이 추가적으로 생성된다(부모 프로세스까지 생각한다면 6개).  
+* b. 2개의 서로 다른 쓰레드들이 생성된다.  
+
 **4.18 As described in Section 4.7.2, Linux does not distinguish between pro- cesses and threads. Instead, Linux treats both in the same way, allowing a task to be more akin to a process or a thread depending on the set of flags passed to the clone() system call. However, other operating systems, such as Windows, treat processes and threads differently. Typically, such systems use a notation in which the data structure for a process contains pointers to the separate threads belonging to the process. Contrast these two approaches for modeling processes and threads within the kernel.**  
 
 **4.19 The program shown in Figure 4.23 uses the Pthreads API. What would be the output from the program at LINE C and LINE P?**  
