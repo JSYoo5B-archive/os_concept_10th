@@ -13,6 +13,8 @@
 
 **4.12 In Chapter 3, we discussed Google’s Chrome browser and its practice of opening each new tab in a separate process. Would the same benefits have been achieved if, instead, Chrome had been designed to open each new tab in a separate thread? Explain.**  
 
+* 각 탭에 대해 쓰레드를 생성하게 될 경우, 하나의 탭(쓰레드)에 문제가 발생하여 크래시가 발생했을 때 다른 탭(쓰레드)에 영향을 줄 수 있기 때문에 프로세스로 각 탭을 구현했을 때와 다르다.  
+
 **4.13 Is it possible to have concurrency but not parallelism? Explain.**  
 
 **4.14 Using Amdahl’s Law, calculate the speedup gain for the following applications:**  
