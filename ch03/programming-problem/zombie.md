@@ -1,7 +1,7 @@
 [Programming Problems 3.18]
 
 좀비 프로세스를 만드는 예시 1) 
-```
+```c
 #include <stdlib.h>
 #include <sys/types.h>
 #include <unistd.h>
@@ -25,7 +25,7 @@ int main()
 -> 부모 프로세스가 wait 시스템 콜을 사용하여 자식 프로세스가 끝나기를 대기해야 하는데 50초 sleep 하는 동안 자식 프로세스는 exit 함수를 호출하여 실행을 종료하기 때문에 하위 프로세스 항목이 프로세스 테이블에 여전히 존재하게 되면서 자식 프로세스가 좀비 프로세스가 된다. 
 
 좀비 프로세스를 만드는 예시 2)
-```
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
