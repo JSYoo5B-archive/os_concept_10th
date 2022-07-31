@@ -4,6 +4,21 @@
 - 빠른 연산을 위해 사용,,?
 
 ## 4.2  Using Amdahl’s Law, calculate the speedup gain of an application that has a 60 percent parallel component for (a) two processing cores and (b) four processing cores.
+(a) S = 2, P = 0.6
+
+S / S ( 1 - P ) + P 
+
+= 2 / 2 * 0.4 + 0.6
+
+= 1.428
+
+(b) S = 4, P = 0.6
+
+S / S ( 1 - P ) + P
+
+= 4 / 4 * 0.4 + 0.6
+
+= 1.818
 
 ## 4.3 Does the multithreaded web server described in Section 4.1 exhibit task or data parallelism?
 
