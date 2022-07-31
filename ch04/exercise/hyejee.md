@@ -35,6 +35,9 @@
 • How many threads will you create to perform the input and output? Explain.  
 • How many threads will you create for the CPU-intensive portion of the application? Explain.  
 
+* 하나의 쓰레드만 생성하면 된다. 인풋과 아웃풋이 동시에 발생하지 않기 때문에 하나의 쓰레드를 생성하는 것으로 충분하다.    
+* 4개의 가용 가능한 프로세서가 있으므로 4개의 쓰레드를 생성하여 각 프로세서가 하나의 쓰레드를 사용하도록 한다. 필요에 따라 더 많은 쓰레드를 생성할 수도 있지만, 쓰레드 생성, 쓰레드들 간의 스케쥴링에 대한 오버헤드가 생길 수 있다.  
+
 **4.17 Consider the following code segment:**  
 ```C
 pid_t pid;
