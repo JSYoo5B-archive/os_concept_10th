@@ -1,13 +1,13 @@
 **4.8 Provide two programming examples in which multithreading does not provide better performance than a single-threaded solution.**  
 
-**4.9 Under what circumstances does a multithreaded solution using multi- ple kernel threads provide better performance than a single-threaded solution on a single-processor system?**  
+**4.9 Under what circumstances does a multithreaded solution using multiple kernel threads provide better performance than a single-threaded solution on a single-processor system?**  
 
 **4.10 Which of the following components of program state are shared across threads in a multithreaded process?**  
 **a. Register values**  
 **b. Heap memory**  
 **c. Global variables**  
 **d. Stack memory**  
-* b. Heap memeory, c. Global variable
+* b. Heap memeory, c. Global variable  
 
 **4.11 Can a multithreaded solution using multiple user-level threads achieve better performance on a multiprocessor system than on a single-processor system? Explain.**  
 
