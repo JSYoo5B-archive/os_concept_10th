@@ -1,6 +1,10 @@
 **5.1 A CPU-scheduling algorithm determines an order for the execution of its scheduled processes. Given n processes to be scheduled on one processor, how many different schedules are possible? Give a formula in terms of n.**  
 
+* n!  
+
 **5.2 Explain the difference between preemptive and nonpreemptive scheduling.**  
+
+* nonpreemptive 스케줄링의 경우, 실행 중이던 프로세스가 종료(terminate)되거나 자발적으로 I/O 등으로 인해 running state에서 waiting state로 넘어간 경우에만 스케줄링이 일어나는 것이다. preemptive 스케줄링은 nonpreemtive 스케줄링이 일어나는 상황이 아닌 모든 상황에서 스케줄링이 일어나는 것을 말한다. 여러 프로세스에서 동일한 데이터를 공유하는 상황이었다면 preemptive 스케줄링의 경우 race condition이 발생할 수 있다.  
 
 **5.3 Suppose that the following processes arrive for execution at the times indicated. Each process will run for the amount of time listed. In answering the questions, use nonpreemptive scheduling, and base all decisions on the information you have at the time the decision must be made.**  
 **a. What is the average turnaround time for these processes with the FCFS scheduling algorithm?**  
