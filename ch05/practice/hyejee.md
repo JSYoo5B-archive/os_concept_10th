@@ -28,17 +28,17 @@
  |P5|5|3|
 
 **b. What is the turnaround time of each process for each of the scheduling algorithms in part a?**  
-**c. What is the waiting time of each process for each of these schedul- ing algorithms?**  
+**c. What is the waiting time of each process for each of these scheduling algorithms?**  
 **d. Which of the algorithms results in the minimum average waiting time (over all processes)?**  
 
-**5.5 The following processes are being scheduled using a preemptive, round- robin scheduling algorithm.**  
-**Each process is assigned a numerical priority, with a higher number indicating a higher relative priority. In addition to the processes listed below, the system also has an idle task (which consumes no CPU resources and is identified as Pidle). This task has priority 0 and is scheduled when- ever the system has no other available processes to run. The length of a time quantum is 10 units. If a process is preempted by a higher-priority process, the preempted process is placed at the end of the queue.**  
+**5.5 The following processes are being scheduled using a preemptive, roundrobin scheduling algorithm.**  
+**Each process is assigned a numerical priority, with a higher number indicating a higher relative priority. In addition to the processes listed below, the system also has an idle task (which consumes no CPU resources and is identified as Pidle). This task has priority 0 and is scheduled whenever the system has no other available processes to run. The length of a time quantum is 10 units. If a process is preempted by a higher-priority process, the preempted process is placed at the end of the queue.**  
 **a. Show the scheduling order of the processes using a Gantt chart.**  
 **b. What is the turnaround time for each process?**  
 **c. What is the waiting time for each process?**  
 **d. What is the CPU utilization rate?**  
 
-**5.6 What advantage is there in having different time-quantum sizes at dif- ferent levels of a multilevel queueing system?**  
+**5.6 What advantage is there in having different time-quantum sizes at different levels of a multilevel queueing system?**  
 
 **5.7 Many CPU-scheduling algorithms are parameterized. For example, the RR algorithm requires a parameter to indicate the time slice. Multilevel feedback queues require parameters to define the number of queues, the scheduling algorithms for each queue, the criteria used to move processes between queues, and so on.**  
 **These algorithms are thus really sets of algorithms (for example, the set of RR algorithms for all time slices, and so on). One set of algorithms may include another (for example, the FCFS algorithm is the RR algorithm with an infinite time quantum). What (if any) relation holds between the following pairs of algorithm sets?**  
