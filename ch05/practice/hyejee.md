@@ -40,6 +40,8 @@
 
 **5.6 What advantage is there in having different time-quantum sizes at different levels of a multilevel queueing system?**  
 
+* 빠르게 응답을 해줘야하거나 I/O bound인 작업들은 time quantum이 작은 큐에 배치하고, CPU bound 작업들은 time quantum이 긴 곳에 배치하여 궁극적으로는 CPU를 더 효율적으로 사용할 수 있게 된다.
+
 **5.7 Many CPU-scheduling algorithms are parameterized. For example, the RR algorithm requires a parameter to indicate the time slice. Multilevel feedback queues require parameters to define the number of queues, the scheduling algorithms for each queue, the criteria used to move processes between queues, and so on.**  
 **These algorithms are thus really sets of algorithms (for example, the set of RR algorithms for all time slices, and so on). One set of algorithms may include another (for example, the FCFS algorithm is the RR algorithm with an infinite time quantum). What (if any) relation holds between the following pairs of algorithm sets?**  
 **a. Priority and SJF**  
