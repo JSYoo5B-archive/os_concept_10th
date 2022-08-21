@@ -18,6 +18,15 @@
 **5.4 Consider the following set of processes, with the length of the CPU burst time given in milliseconds:**  
 **The processes are assumed to have arrived in the order P1, P2, P3, P4, P5, all at time 0.**  
 **a. Draw four Gantt charts that illustrate the execution of these pro- cesses using the following scheduling algorithms: FCFS, SJF, non-preemptive priority (a larger priority number implies a higher priority), and RR (quantum = 2).**  
+
+|Process|Burst Time|Priority|
+ |:---:|:---:|:---:|
+ |P1|2|2|
+ |P2|1|1|
+ |P3|8|4|
+ |P4|4|2|
+ |P5|5|3|
+
 **b. What is the turnaround time of each process for each of the scheduling algorithms in part a?**  
 **c. What is the waiting time of each process for each of these schedul- ing algorithms?**  
 **d. Which of the algorithms results in the minimum average waiting time (over all processes)?**  
