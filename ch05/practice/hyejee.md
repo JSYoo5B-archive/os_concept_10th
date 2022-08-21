@@ -55,6 +55,11 @@
 **c. Priority and FCFS**  
 **d. RR and SJF**  
 
+* a) priority와 SJF는 반비례 관계다.  
+* b) MLFQ의 최하위 레벨의 큐는 FCFS를 채택한다.    
+* c) FCFS에서는 CPU를 가장 오랫동안 받지 못한 job에게 가장 높은 priority를 준다.  
+* d) 뭐가 있나...? 둘 다 CPU 스케줄링 알고리즘이다... 정도?  
+
 **5.8 Suppose that a CPU scheduling algorithm favors those processes that have used the least processor time in the recent past. Why will this algorithm favor I/O-bound programs and yet not permanently starve CPU-bound programs?**  
 
 * I/O-bound 프로그램들은 CPU를 사용하는 시간이 상대적으로 짧기 때문에 해당 알고리즘이 더 선호할 수밖에 없다. 하지만 CPU-bound 프로그램들이 기아 상태에 빠지지 않는 이유는 I/O-bound 프로그램들은 I/O를 기다리느라 wait state로 가는 등 CPU를 더 이상 사용하지 않기 때문이다.    
