@@ -12,6 +12,9 @@
 **b. What is the average turnaround time for these processes with the SJF scheduling algorithm?**  
 **c. The SJF algorithm is supposed to improve performance, but notice that we chose to run process P1 at time 0 because we did not know that two shorter processes would arrive soon. Compute what the average turnaround time will be if the CPU is left idle for the first 1 unit and then SJF scheduling is used. Remember that processes P1 and P2 are waiting during this idle time, so their waiting time may increase. This algorithm could be known as future-knowledge scheduling.**  
 
+* a) (8 + (12 - 0.4) + (13 - 1)) / 3 = 10.53  
+* b) (8 + (9 - 1) + (13 – 0.4)) / 3 = 9.53  
+
 **5.4 Consider the following set of processes, with the length of the CPU burst time given in milliseconds:**  
 **The processes are assumed to have arrived in the order P1, P2, P3, P4, P5, all at time 0.**  
 **a. Draw four Gantt charts that illustrate the execution of these pro- cesses using the following scheduling algorithms: FCFS, SJF, non-preemptive priority (a larger priority number implies a higher priority), and RR (quantum = 2).**  
