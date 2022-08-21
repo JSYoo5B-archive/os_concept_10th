@@ -57,6 +57,8 @@
 
 **5.8 Suppose that a CPU scheduling algorithm favors those processes that have used the least processor time in the recent past. Why will this algorithm favor I/O-bound programs and yet not permanently starve CPU-bound programs?**  
 
+* I/O-bound 프로그램들은 CPU를 사용하는 시간이 상대적으로 짧기 때문에 해당 알고리즘이 더 선호할 수밖에 없다. 하지만 CPU-bound 프로그램들이 기아 상태에 빠지지 않는 이유는 I/O-bound 프로그램들은 I/O를 기다리느라 wait state로 가는 등 CPU를 더 이상 사용하지 않기 때문이다.    
+
 **5.9 Distinguish between PCS and SCS scheduling.**  
 
 **5.10 The traditional UNIX scheduler enforces an inverse relationship between priority numbers and priorities: the higher the number, the lower the priority. The scheduler recalculates process priorities once per second using the following function:**  
