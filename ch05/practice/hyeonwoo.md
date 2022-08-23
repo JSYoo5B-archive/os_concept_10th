@@ -1,11 +1,14 @@
 ## 5.1 A CPU-scheduling algorithm determines an order for the execution of its scheduled processes. Given *n* processes to be scheduled on one processor, how many different schedules are possible? Give a formula in terms of *n.*
 
-무슨 말인지 모르겠다,, n개의 프로세스를 스케줄링 할 수 있는 경우의 수를 n개로 나타내는 것이면 (n!) ?
+n!
 
 ## 5.2  Explain the difference between preemptive and nonpreemptive scheduling.
 
 비선점은 진행하고 있는 프로세스의 작업이 완료될 때까지 CPU를 강제로 뺏지 않고,
 선점은 진행하고 있는 프로세스에게서 CPU를 강제로 뺏는다.
+-> 프로세스의 작업이 완료될 때까지라고 표현한게 애매한 이유는 프로세스가 I/O job을 처리할 때는 자발적으로 CPU를 놓고 가기 때문
+
+따라서 프로세스의 작업이 완료되거나, 자발적으로 I/O 등으로 인해 프로세스가 자발적으로 CPU를 반납한다라고 표현하는 것이 적절해보임
 
 ## 5.3 Suppose that the following processes arrive for execution at the times inducated. Each process will run for the amount of time listed. In answering the questions, use nonpreemptive scheduling, and base all decisions on the information you have at the time the decision must be made.
 
