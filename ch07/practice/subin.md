@@ -22,13 +22,13 @@
 ->
 
 #### 7.6 val이 Linux 시스템에서 원자적 정수라고 가정하자. 다음 연산이 완료된 후 val 값은 무엇인가?
-` 
-atomic_set(&val, 10);
-atomic_sub(8, &val);
-atomic_inc(&val);
-atomic_inc(&val);
-atomic_add(6, &val);
-atomic_sub(3, &val);
-`
+```
+atomic_set(&val, 10);  
+atomic_sub(8, &val);  
+atomic_inc(&val);  
+atomic_inc(&val);  
+atomic_add(6, &val);  
+atomic_sub(3, &val);  
+```
 ->
 10(set) – 8(sub) + 1(inc) + 1(inc) + 6(add) – 3(sub) = 7
