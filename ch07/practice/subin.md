@@ -11,7 +11,7 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/45066381/192123727-300f88f2-2f11-40c9-94ca-8214c22b17bd.png" width="500" height="300"/></p>
 <p align="center"><img src="https://user-images.githubusercontent.com/45066381/192123730-a1555e88-bc36-4322-bdde-f26c8a5199ca.png" width="500" height="300"/></p>
 
-위의 코드에서 wait(mutex) -> acquire(mutex)로, signal(mutex) -> release()로 수정하면 이진 세마포어 대신 mutex를 사용할 수 있다. 즉, API 변경을 통해 변경할 수 있다.
+위의 코드에서 wait(mutex) -> acquire(mutex)로, signal(mutex) -> release()로 수정하면 이진 세마포어 대신 mutex를 사용할 수 있다. 
 
 #### 7.4 식사하는 철학자들의 문제에서 교착 상태가 어떻게 가능한지 설명하라.
 ->

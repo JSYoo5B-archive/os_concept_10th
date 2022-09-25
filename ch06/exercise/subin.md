@@ -12,7 +12,7 @@
 ```
 #### This has the effect of summing the elements in the array as a series of partial sums, as shown in Figure 6.16. After the code has executed, the sum of all elements in the array is stored in the last array location. Are there any race conditions in the above code example? If so, identify where they occur and illustrate with an example. If not, demonstrate why this algorithm is free from race conditions.
 ->
-가정 1) `for j = 1 to log 2(N)` 문이 병렬적으로 수행되는 경우 : 가장 바깥쪽의 for 문은 그림 6.17에서 각 세로줄의 연산 수행을 의미한다. 즉, for 문 하나에 배열 안에서 일어나는 모든 연산을 포함하고 있으므로 각각의 스레드에서 병렬적으로 연산이 이루어져도 race condition이 일어나지 않는다.
+가정 1) `for j = 1 to log 2(N)` 문이 병렬적으로 수행되는 경우 : 가장 바깥쪽의 for 문은 그림 6.17에서 각 세로줄의 연산 수행을 의미한다. 즉, for 문 하나에 배열 안에서 일어나는 모든 연산을 포함하고 있으므로 각각의 스레드에서 병렬적으로 연산이 이루어져도 race condition이 일어나지 않는다.  
 가정 2) `for k = 1 to N` 문이 병렬적으로 수행되는 경우 : 안쪽 for 문은 배열 내에서 조건에 맞는 index의 배열 값끼리 연산을 수행 후 배열 값을 갱신한다. 즉, for 문을 전부 돌아야 하나의 배열 안에서 일어나는 모든 연산을 포함하게 되는데 이런 for 문을 각각의 스레드에서 병렬적으로 수행하게 되면 상호 배제를 위반하게 된다.
 
 #### 6.10 The compare and swap() instruction can be used to design lock-free data structures such as stacks, queues, and lists. The program example shown in Figure 6.17 presents a possible solution to a lock-free stack using CAS instructions, where the stack is represented as a linked list of Node elements with top representing the top of the stack. Is this implementation free from race conditions?
