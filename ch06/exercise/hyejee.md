@@ -18,3 +18,7 @@ for j = 1 to log 2(N) {
 
 **6.10 The compare and swap() instruction can be used to design lock-free data structures such as stacks, queues, and lists. The program example shown in Figure 6.17 presents a possible solution to a lock-free stack using CAS instructions, where the stack is represented as a linked list of Node elements with top representing the top of the stack. Is this implementation free from race conditions?**  
 ![CleanShot 2022-09-18 at 16 00 55@2x](https://user-images.githubusercontent.com/46441723/190889900-0e576e23-9815-4636-a719-669a0722b729.png)   
+* 위와 같은 구현은 race condition에서 자유롭지 않다. `compare_and_swap`이 이루어지기 전에 포인터들이 가르키고 있는 메모리의 값이 다른 쓰레드에 의해 바뀌게 되는 경우가 발생할 수 있기 때문이다. 이처럼 여러 쓰레드들이 공유되고 있는 객체의 값을 변경하고 있는 상황에서 CAS 연산이 그 값의 변경을 알아채지 못하는 현상을 ABA Problem이라고 한다.  
+* Reference  
+    * http://15418.courses.cs.cmu.edu/spring2013/article/46  
+    * https://blog.naver.com/jjoommnn/130040068875  
